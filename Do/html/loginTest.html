@@ -73,9 +73,9 @@
                       </div><br>
                     </form>
                     <div class="ui buttons" style="width:80%">
-                      <a class="ui teal button" >登录</a>
+                      <a class="ui teal button" style="50%">登录</a>
                       <div class="or"></div>
-                      <a class="ui teal button" id="registe" >注册</a>
+                      <a class="btn btn-info" data-toggle="modal" data-target="#myModal" id="registe" style="color: aliceblue;width: 50%;" >注册</a>
                     </div>
               </div>
               <div class="five wide column">
@@ -84,6 +84,7 @@
         </div>
       </div>     
      </div>
+      
   </section><!-- #intro -->
 
   
@@ -118,47 +119,54 @@
       </div>
     </div>
   </footer><!-- #footer -->
-    <!--style="width:30%;height:50%;margin-left: 35%;margin-right: 65%;margin-top:50%;margin-bottom: 50%;"-->
-    <!--style="width:30%;height:50%;top:50%;left:50%;"-->
-  <div class="ui modal" id="modal" >
-     <i class="close icon"></i>
-     <div class="header">
-        用户注册
-     </div>
-      <div id="Logo">
-      
-      </div>
-       <form class="ui form">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="field" style="width:80%;margin-left:10%; margin-right: 10%; ">
-                <input type="text" name="first-name" placeholder="学号">
-            </div>
-            <div class="field" style="width: 80%;margin-left:10%; margin-right: 10%; ">
-                <input type="password" name="last-name" placeholder="姓名">
-            </div>
-            <div class="field" style="width:80%;margin-left:10%; margin-right: 10%; ">
-                <input type="text" name="first-name" placeholder="身份证后六位">
-            </div>
-            <div class="field" style="width: 80%;margin-left:10%; margin-right: 10%; ">
-                <input type="password" name="last-name" placeholder="密码">
-            </div>
-           <br>
-           <br>
-           <br>
-           <br>
-           <br>
-        </form>
-  <div class="actions">
-     <div class="ui positive button" style="width:80%;margin-left:10%; margin-right: 10%;">
-        注册
-     </div>
-  </div>
-</div>    
-  
+    
+            <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              <span class="sr-only">Close</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                                 <form class="ui form">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <!--这边需要logo-->
+                                    <br>
+                                    <br>
+                                    <div class="field" style="width:80%;margin-left:10%; margin-right: 10%; ">
+                                        <input type="text" name="first-name" placeholder="学号">
+                                    </div>
+                                    <div class="field" style="width: 80%;margin-left:10%; margin-right: 10%; ">
+                                        <input type="password" name="last-name" placeholder="姓名">
+                                    </div>
+                                    <div class="field" style="width:80%;margin-left:10%; margin-right: 10%; ">
+                                        <input type="text" name="first-name" placeholder="身份证后六位">
+                                    </div>
+                                    <div class="field" style="width: 80%;margin-left:10%; margin-right: 10%; ">
+                                        <input type="password" name="last-name" placeholder="密码">
+                                    <br>    
+                                    <br>    
+                                     <button type="button" class="btn btn-primary">上传头像</button>&nbsp;&nbsp;&nbsp;
+                                        <a>暂无头像数据</a>
+                                   <br>
+                                   <br>
+                                   <br>
+                                   <br>
+                                </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">注册</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-------Modal---->
     
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -174,12 +182,5 @@
   <script src="../lib/semantic/semantic.min.js"></script>
   <!-- Template Main Javascript File -->
   <script src="../js/main.js"></script>
-  <script >
-    jQuery(document).ready(function($) {
-        $("#registe").click(function(){
-             $('.ui.modal').modal('show'); 
-        });
-    });
-  </script>
 </body>
 </html>

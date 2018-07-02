@@ -56,140 +56,241 @@
   <section id="intro">
       <br><br><br>
       <div class="ui segment">
-            <div class="ui grid">
-                <div class="two wide column ">
-                </div>
-                <div class="twelve wide column ">
-                    <div class="ui segment">
-                        <div class="ui grid">
-                            <div class="five wide column">
-                                <div class="ui clearing segment" >
-                                    <div id="UserInfo" >
-                                        <img id="GourpImg" class="ui tiny left floated image" src="image.png">
-                                        <a id="Groupname"> 中南大学软件学院</a><br>
-                                        <a id="GroupDsb">XXXXXXX描述XXXXXXXXX</a><br><br>
-                                        <button class="ui right floated button" style="font-size: 10px">
-                                            修改信息</button>
-                                    </div>
-                                </div>
-                                <div id="UserGroup" class="ui clearing segment" >
-                                    <div class="ui black inverted clearing segment" style="padding: 5px;margin: 0">
-                                        <a >成员信息</a>
-                                        <button class="ui mini green right floated button" id="ExitGroup">退出群组</button>
-                                    </div>
-                                    <div class="ui clearing segment" id="MemberInfo">
-                                        <div id="UserInfo" >
-                                            <img  class="ui mini left floated image" src="image.png">
-                                            <a href="#"> 舒鑫</a><br>
-                                            <a >XXXXXX描述</a>
-                                        </div>
-                                        <div class="ui divider"></div>   
-                                        <div id="UserInfo" >
-                                            <img  class="ui mini left floated image" src="image.png">
-                                            <a href="#"> 廖智勇</a><br>
-                                            <a >XXXXXX描述</a> 
-                                        </div>    
-                                        <div class="ui divider"></div>   
-                                        <div id="UserInfo" >
-                                            <img  class="ui mini left floated image" src="image.png">
-                                            <a href="#"> AAA</a><br>
-                                            <a >XXXXXX描述</a>
-                                        </div>    
-                                        <div class="ui divider"></div>   
-                                        <div id="UserInfo" >
-                                            <img  class="ui mini left floated image" src="image.png">
-                                            <a href="#"> BBB</a><br>
-                                            <a >XXXXXX描述</a> 
-                                        </div>    
-                                        <div class="ui divider"></div>   
-                                        <div id="UserInfo" >
-                                            <img  class="ui mini left floated image" src="image.png">
-                                            <a href="#">CCC</a><br>
-                                            <a >XXXXXX描述</a><br>
-                                        </div>
-                                        <div class="ui divider"></div>
-                                    </div>
-                                     <a id="More">更多</a> 
-                                </div>
-                            </div>
-                            <div class="eleven wide column">
-                                <div class="ui top attached tabular menu">
-                                    <a class="item active" data-tab="first" id="Message">所有通知</a>
-                                    <a class="item" data-tab="second" id="Task">所有任务</a>
-                                </div>
-                                <div class="ui container" id="MsgAndTask">
-                                    <!--一条群组的信息-->
-                                    <div class="ui comments" style="margin: 0">
-                                        <div class="comment">
-                                            <a class="avatar">
-                                                <img class="ui mini image" src="image.png">
-                                            </a>
-                                            <div class="content">
-                                                <a class="author">班长</a>
-                                                <div class="metadata">
-                                                    <div class="date">2 days ago</div>
-                                                </div>
-                                                <div class="text">
-                                                    大家看一下消息呗，重要
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ui compact segments" style="width: 100%;margin: 0">
-                                        <div class="ui green segment">
-                                            <a href="#" name="Title">实验报告</a>
-                                            <button class="ui blue mini right floated button" id="MoreImformation">查看详细</button>
-                                        </div>
-                                        <div class="ui segment" id="TaskDetail" >
-                                            <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <button class="ui blue mini right floated button" id="Confirm">收起，确认已阅</button>
-                                        </div>
-                                    </div>
-                                    <!--单群组的信息，争取复用-->
-                                    <div class="ui divider">
-                                     <!--一条群组的信息-->
-                                    <div class="ui comments" style="margin: 0">
-                                        <div class="comment">
-                                            <a class="avatar">
-                                                <img class="ui mini image" src="image.png">
-                                            </a>
-                                            <div class="content">
-                                                <a class="author">班长</a>
-                                                <div class="metadata">
-                                                    <div class="date">2 days ago</div>
-                                                </div>
-                                                <div class="text">
-                                                    大家看一下消息呗，重要
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ui compact segments" style="width: 100%;margin: 0">
-                                        <div class="ui green segment">
-                                            <a href="#" name="Title">实验报告</a>
-                                            <button class="ui blue mini right floated button" id="MoreImformation">查看详细</button>
-                                        </div>
-                                        <div class="ui segment" id="TaskDetail" >
-                                            <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <button class="ui blue mini right floated button" id="Confirm">收起，确认已阅</button>
-                                        </div>
-                                    </div>
-                                    <!--单群组的信息，争取复用-->
-                                </div>
-                                
-                            </div>
+          <div class="ui grid">
+              <div class="two wide column"></div>
+              <div class="twelve wide column">
+              <div class="ui clearing segment" id="taskDes">
+                 <a id="TaskName" class="ui text">今天下午要进行测试</a><br><br> 
+                 <a id="publisher" class="ui right floated label">发布者：舒鑫</a>
+                 <a id="time" class="ui right floated label">时间：2018-8-12</a>
+                 <a id="importance" class="ui right floated red label">重要</a>
+                 <a id="status" class="ui right floated red label">待完成</a>
+              </div>
+              <div class="ui segment" id="taskDetail">
+                  <a class="ui label">具体：</a><br>
+                  <div class="ui segment" id="detail">
+                    XXXXXXXX<br>
+                    XXXXXXXX<br>
+                    XXXXXXXX<br>
+                    XXXXXXXX<br>
+                    XXXXXXXX<br>
+                    XXXXXXXX<br>
+                    XXXXXXXX<br>
+                  </div>
+              </div>
+              <div class="ui segment" id="MemberStatus">
+                  <a class="ui label">查看成员完成情况：</a>
+                  <a class="ui green label">45/55</a>
+                  <a class="ui right floated tiny button"  id="LayMemberout" value="展开">展开</a>
+                  <div class="ui divider"></div>
+                  <div class="ui container" id="MemberDetail">
+                    <div class="ui grid">
+                        <!--这边具体数量使用js返回数量来填充，点击展开以后。这里JS写的是隐藏，之后改-->
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
                         </div>
+                       <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        <div class="two wide column">
+                            <img class="ui mini left floated image" src="image.png" >
+                            <a class="ui red label"></a><br>
+                            <a>上官猪猪</a>
+                        </div>
+                        
+                        <!---这边具体数量使用js返回数量来填充----->
                     </div>
-                </div>
-                <div class="two wide column ">
-                </div>
-            </div>
+                  </div>
+              </div>
+              <button class="ui green right floated button" id="submit">提交，确认收到通知</button> 
+              <button class="ui green right floated button" id="submit">返回</button>       
+              </div>
+              <div class="two wide column"></div>
+          </div>
       </div>
   </section><!-- #intro -->
 
@@ -242,27 +343,25 @@
   <script src="../js/main.js"></script>
   <script>
     jQuery(document).ready(function($) {
-        $("#TaskDetail").hide();
+        var MemberDetail = $("#MemberDetail");
+        var LayMemberout = $("#LayMemberout");
         
-        $("#MoreImformation").click(function(){
-            $("#TaskDetail").show();
-        });  
-         
-        $("#Confirm").click(function(){
-            $("#TaskDetail").hide();
-        });         
-
-        $('#Message').click(function(){
-            $('#Message').attr("class", "item active");
-            $('#Task').attr("class", "item");
+        MemberDetail.hide();
+        
+        LayMemberout.click(function(){
+            var txt_value = LayMemberout.text();
+            if(txt_value == "展开"){                     
+              MemberDetail.show();
+              LayMemberout.text("收起");
+            }
+            else if(txt_value == "收起"){                     
+                MemberDetail.hide();
+                LayMemberout.text("展开");
+            }
         });
+      
+        $("#submit").click(function(){
         
-        $('#Task').click(function(){
-            $('#Message').attr("class", "item");
-            $('#Task').attr("class","item active ");
-        });  
-        $('#More').click(function(){
-            $("#MemberInfo").append('<br>新添加的内容<br>');
         });
     });
 

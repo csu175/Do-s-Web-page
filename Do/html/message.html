@@ -120,10 +120,10 @@
                             </div>
                             <div class="eleven wide column">
                                 <div class="ui top attached tabular menu">
-                                    <a class="item active" data-tab="first" id="Message">所有公告</a>
-                                    <a class="item" data-tab="second" id="Task">所有任务</a>
+                                    <a class="item active" data-tab="first" id="Message">通知</a>
                                 </div>
-                                <div class="ui container" id="MsgAndTask">
+                                <div class="ui container" id="Message">
+                                    <br>
                                     <!--一条群组的信息-->
                                     <div class="ui comments" style="margin: 0">
                                         <div class="comment">
@@ -136,56 +136,25 @@
                                                     <div class="date">2 days ago</div>
                                                 </div>
                                                 <div class="text">
-                                                    Hey guys, I hope this example comment is helping you read this documentation.
+                                                  嗨，你好。我希望你加入我们群组
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="ui compact segments" style="width: 100%;margin: 0">
                                         <div class="ui green segment">
-                                            <a href="#" name="Title">Lab Report</a>
+                                            <a href="#" name="Title">群邀请</a>
                                             <button class="ui blue mini right floated button" id="MoreImformation">查看详细</button>
                                         </div>
-                                        <div class="ui segment" id="TaskDetail" >
-                                            <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <button class="ui blue mini right floated button" id="Confirm">收起，确认已阅</button>
+                                        <div class="ui segment" id="joinDetail" >
+                                            <p style="color: black">群名：两只小米粉</p>
+                                            <p style="color: black">群描述：XXXXXXXX</p>
+                                             <button class="ui blue mini right floated button" id="join">确认加入</button>
                                         </div>
                                     </div>
                                     <!--单群组的信息，争取复用-->
                                     <div class="ui divider">
                                      <!--一条群组的信息-->
-                                    <div class="ui comments" style="margin: 0">
-                                        <div class="comment">
-                                            <a class="avatar">
-                                                <img class="ui mini image" src="https://semantic-ui.qyears.com/images/avatar/small/stevie.jpg">
-                                            </a>
-                                            <div class="content">
-                                                <a class="author">Stevie Feliciano</a>
-                                                <div class="metadata">
-                                                    <div class="date">2 days ago</div>
-                                                </div>
-                                                <div class="text">
-                                                    Hey guys, I hope this example comment is helping you read this documentation.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ui compact segments" style="width: 100%;margin: 0">
-                                        <div class="ui green segment">
-                                            <a href="#" name="Title">架构实验报告</a>
-                                            <button class="ui blue mini right floated button" id="MoreImformation" >查看详细</button>
-                                        </div>
-                                        <div class="ui segment" id="TaskDetail" >
-                                            <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <p style="color: black">Pellentesque habitant morbi</p>
-                                             <button class="ui blue mini right floated button" id="Confirm">收起，确认已阅</button>
-                                        </div>
-                                    </div>
                                     <!--单群组的信息，争取复用-->
                                 </div>
                                 
@@ -248,17 +217,17 @@
   <script src="../js/main.js"></script>
   <script>
     jQuery(document).ready(function($) {
-        $("#TaskDetail").hide();
+        $("#joinDetail").hide();
         //$("#redCircle").hide(); 消息通知点进行隐藏
         
         //这边需要写数据传输，判断有没有红色点的函数
         
         $("#MoreImformation").click(function(){
-            $("#TaskDetail").show();
+            $("#joinDetail").show();
         });  
          
-        $("#Confirm").click(function(){
-            $("#TaskDetail").hide();
+        $("#join").click(function(){
+            $("#joinDetail").hide();
         });         
 
         $('#Message').click(function(){
